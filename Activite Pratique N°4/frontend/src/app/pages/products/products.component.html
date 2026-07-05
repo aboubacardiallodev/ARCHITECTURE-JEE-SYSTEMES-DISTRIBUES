@@ -1,0 +1,52 @@
+<div class="products-container">
+  <div class="products-header">
+    <h2 class="products-title">
+      <i class="bi bi-box-seam"></i> Catalogue Produits
+    </h2>
+    <button class="btn btn-sm btn-outline-primary" (click)="loadProducts()">
+      <i class="bi bi-arrow-clockwise"></i> Rafraîchir
+    </button>
+  </div>
+
+  <div *ngIf="products.length === 0" class="empty-state">
+    <i class="bi bi-inbox"></i>
+    <p>Aucun produit disponible</p>
+  </div>
+
+  <div *ngIf="products.length > 0" class="products-grid">
+    <div *ngFor="let product of products" class="product-card" [class.selected]="product.selected">
+      <div class="product-header">
+        <span class="product-id">#{{ product.id }}</span>
+        <input 
+          type="checkbox" 
+          class="form-check-input product-checkbox" 
+          [checked]="product.selected" 
+          (change)="toggleSelected(product)"
+          [attr.aria-label]="'Sélectionner ' + product.name">
+      </div>
+
+      <div class="product-body">
+        <h5 class="product-name">{{ product.name }}</h5>
+        <p class="product-price">{{ product.price | number:'1.2-2' }} <span class="currency">DH</span></p>
+      </div>
+
+      <div class="product-footer">
+        <button 
+          class="btn btn-sm btn-danger btn-delete" 
+          (click)="onDelete(product)"
+          [attr.aria-label]="'Supprimer ' + product.name">
+          <i class="bi bi-trash"></i> Supprimer
+        </button>
+      </div>
+
+      <div class="badge-selected" *ngIf="product.selected">
+        <i class="bi bi-check-circle-fill"></i> Sélectionné
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-confirm-modal 
+  (confirm)="onConfirmDelete()"
+  (cancel)="onCancelDelete()">
+</app-confirm-modal>

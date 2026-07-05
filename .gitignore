@@ -39,6 +39,32 @@ nbdist/
 # VS Code
 .vscode/
 
+# Angular
+node_modules/
+dist/
+.angular/
+angular-workspace-cache/
+.angular/cache/
+
+# NPM
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+*.swp
+*.swo
+*~
+.idea/
+*.sublime-project
+*.sublime-workspace
+
 # OS files
 .DS_Store
 Thumbs.db

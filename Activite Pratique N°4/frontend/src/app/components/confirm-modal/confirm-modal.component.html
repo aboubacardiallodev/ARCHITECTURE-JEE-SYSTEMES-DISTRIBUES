@@ -1,0 +1,25 @@
+<div class="modal-overlay" *ngIf="isVisible" (click)="onCancel()">
+  <div class="modal-dialog" (click)="$event.stopPropagation()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <i class="bi bi-exclamation-triangle-fill"></i> {{ title }}
+        </h5>
+        <button type="button" class="btn-close" (click)="onCancel()"></button>
+      </div>
+      
+      <div class="modal-body">
+        {{ message }}
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="onCancel()">
+          <i class="bi bi-x-lg"></i> Annuler
+        </button>
+        <button type="button" class="btn btn-danger" (click)="onConfirm()">
+          <i class="bi bi-trash"></i> Supprimer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

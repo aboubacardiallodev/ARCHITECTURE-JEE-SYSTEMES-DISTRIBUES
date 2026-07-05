@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Activite Pratique N°1/TP-1-injection-dependance/pom.xml" />
         <option value="$PROJECT_DIR$/Activite Pratique N°1/TP-1-mini-framework/pom.xml" />
         <option value="$PROJECT_DIR$/Activite Pratique N°2/TP-2-SPRING-DATA/pom.xml" />
+        <option value="$PROJECT_DIR$/Activite Pratique N°3/TP-3-SPRING-MVC/pom.xml" />
       </list>
     </option>
   </component>

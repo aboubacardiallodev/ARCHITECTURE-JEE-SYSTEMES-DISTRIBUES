@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Activite Pratique N°1/TP-1-injection-dependance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Activite Pratique N°1/TP-1-mini-framework" vcs="Git" />
   </component>
 </project>

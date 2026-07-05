@@ -1,19 +1,24 @@
-# Maven / Java build
+# Build outputs (Maven / Java / Kotlin)
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-.kotlin
+out/
+*.class
+*.log
+.kotlin/
+
+# Packaged artifacts
+*.jar
+*.war
+*.ear
+
+# Spring Initializr helper files
+HELP.md
 
 # IntelliJ IDEA
 .idea/
 *.iws
 *.iml
 *.ipr
-out/
 
 # Eclipse / STS
 .apt_generated
@@ -37,6 +42,3 @@ nbdist/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log

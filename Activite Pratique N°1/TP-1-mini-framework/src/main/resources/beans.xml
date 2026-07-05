@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="dao" class="net.aboubacar.app.dao.DaoImpl"/>
+
+    <bean id="metier" class="net.aboubacar.app.metier.MetierImpl">
+        <property name="dao" ref="dao"/>
+    </bean>
+
+</beans>

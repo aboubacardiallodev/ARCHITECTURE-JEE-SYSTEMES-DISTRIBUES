@@ -10,6 +10,15 @@
         <module name="TP-1-injection-dependance" />
         <module name="TP-1-mini-framework" />
       </profile>
+      <profile name="Annotation profile for TP-3-SPRING-MVC" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="TP-3-SPRING-MVC" />
+      </profile>
       <profile name="Annotation profile for TP-2-SPRING-DATA" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -19,15 +28,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="TP-2-SPRING-DATA" />
-      </profile>
-      <profile name="Annotation profile for TP-3-SPRING-MVC" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-        </processorPath>
-        <module name="TP-3-SPRING-MVC" />
       </profile>
     </annotationProcessing>
   </component>

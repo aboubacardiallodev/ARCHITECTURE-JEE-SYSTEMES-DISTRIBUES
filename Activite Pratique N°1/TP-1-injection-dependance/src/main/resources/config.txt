@@ -1,0 +1,2 @@
+net.aboubacar.dao.DaoImplV2
+net.aboubacar.metier.MetierImpl

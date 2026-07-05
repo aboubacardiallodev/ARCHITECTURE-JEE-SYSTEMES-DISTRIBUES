@@ -4,5 +4,6 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Activite Pratique N°1/TP-1-injection-dependance" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Activite Pratique N°1/TP-1-mini-framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Activite Pratique N°2/TP-2-SPRING-DATA" vcs="Git" />
   </component>
 </project>
